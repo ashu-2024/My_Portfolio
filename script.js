@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    
+
     // ========== Form Submission ==========
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
@@ -113,19 +115,21 @@ document.addEventListener('DOMContentLoaded', function() {
             statsImg.src = `https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=dark&hide_border=true`;
             statsImg.alt = 'GitHub Stats';
             statsImg.loading = 'lazy';
+            statsImg.className = 'github-stats-small';
             
             // Create streak stats
             const streakImg = document.createElement('img');
             streakImg.src = `https://github-readme-streak-stats.herokuapp.com/?user=${username}&theme=dark&hide_border=true`;
             streakImg.alt = 'GitHub Streak';
             streakImg.loading = 'lazy';
+            statsImg.className = 'github-streak-small'
             
             // Create contributions image
             const chartImg = document.createElement('img');
             chartImg.src = `https://ghchart.rshah.org/${username}`;
             chartImg.alt = 'GitHub Contributions';
             chartImg.loading = 'lazy';
-            chartImg.className = 'github-chart';
+            chartImg.className = 'github-calender-large';
             
             // Append images to container
             statsContainer.appendChild(statsImg);
