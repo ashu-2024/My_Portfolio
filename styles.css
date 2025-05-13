@@ -595,6 +595,13 @@
             font-size: 0.8rem;
         }
 
+        #last-message{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 1rem;
+            font-weight: 200;
+        }
+
         /* Animations */
         @keyframes fadeIn {
             from {
