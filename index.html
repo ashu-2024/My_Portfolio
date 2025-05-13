@@ -6,7 +6,8 @@
     <title>Ashutosh Kumar Sah - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Assest/favicon.png" type="image/x-icon">
+    <link rel="icon" href="Assets/favicon.png" type="image/png">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -19,7 +20,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="Assest/resume.pdf" download="ashutosh_resume" class="resume-btn">Resume</a></li>
+                <li><a href="Assets/resume.pdf" download="ashutosh_resume" class="resume-btn">Resume</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -40,7 +41,7 @@
                     <a href="#contact" class="btn">Get In Touch</a>
                 </div>
                 <div class="home-image">
-                    <img src="Assest/profile.jpg" alt="Professional Photo">
+                    <img src="Assets/profile.jpg" alt="Professional Photo">
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="Assest/education.avif" alt="Education Illustration">
+                    <img src="Assets/education.avif" alt="Education Illustration">
                 </div>
             </div>
         </div>
@@ -153,7 +154,7 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="Assest/project1.png" alt="Movie Search App" class="project-image">
+                    <img src="Assets/project1.png" alt="Movie Search App" class="project-image">
                     <div class="project-content">
                         <h3>Movie Search Website</h3>
                         <p>A responsive movie search platform using OMDB/TMDB API with dynamic content loading, search functionality, and detailed movie information display.</p>
@@ -176,7 +177,7 @@
                 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="Assest/project2.png" alt="Puzzle Solver Game" class="project-image">
+                    <img src="Assets/project2.png" alt="Puzzle Solver Game" class="project-image">
                     <div class="project-content">
                         <h3>Interactive Puzzle Solver</h3>
                         <p>An image puzzle game with customizable images, move tracking, and session storage for persistent gameplay.</p>
@@ -199,7 +200,7 @@
                 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="Assest/project3.png" alt="Notepad App" class="project-image">
+                    <img src="Assets/project3.png" alt="Notepad App" class="project-image">
                     <div class="project-content">
                         <h3>Web Notepad Application</h3>
                         <p>A feature-rich notepad with CRUD operations, local storage persistence, and clean UI for optimal note-taking experience.</p>
@@ -224,13 +225,16 @@
         </div>
     </section>
 
-    <!-- GitHub Stats Section - Full Width -->
+    <!-- GitHub Stats Section -->
     <section class="github-section">
         <div class="container">
             <h2 class="section-title">My GitHub Contributions</h2>
             <div class="github-stats">
-                <!-- Stats will be loaded via JavaScript -->
-                <img src="https://ghchart.rshah.org/ashu-2024" alt="GitHub Contributions" />
+                <div class="stats-row">
+                    <img src="https://github-readme-streak-stats-salesp07.vercel.app/?user=ashu-2024&count_private=true&theme=react&border_radius=10" alt="streak stats"/>
+                    <img src="https://github-readme-stats-salesp07.vercel.app/api?username=ashu-2024&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
+                </div>
+                <img class="github-calender-large" src="https://ghchart.rshah.org/ashu-2024" alt="GitHub Contributions" />
             </div>
         </div>
     </section>
@@ -269,7 +273,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Ashutosh Kumar Sah. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Ashutosh Kumar Sah. All rights reserved.</p>
         </div>
     </footer>
 
