@@ -1,6 +1,4 @@
-# Ashutosh Kumar Sah - Portfolio 🌟  
-
-![Portfolio Screenshot](./Assets/screenshot.png) *Replace with your screenshot*
+# Ashutosh Kumar Sah - Portfolio 🌟 
 
 A responsive portfolio website to showcase my skills, projects, and GitHub activity. Built with pure **HTML, CSS, and JavaScript** for performance and simplicity.
 
