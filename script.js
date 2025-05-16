@@ -48,6 +48,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
+            // ===== ADD THIS NEW SECTION ===== //
+            // Resume Button Handling
+            const resumeBtn = document.querySelector('.resume-btn');
+            if (resumeBtn) {
+                resumeBtn.addEventListener('click', function(e) {
+                // Prevent default behavior
+                e.preventDefault();
+        
+            // Open viewable version in new tab
+                window.open('https://drive.google.com/file/d/1MN3imTGqwRcW6_ia4TFN_Zyd9D5vjitT/view', '_blank');
+        
+            // Trigger download
+                const downloadLink = document.createElement('a');
+                downloadLink.href = 'https://drive.google.com/uc?export=download&id=1MN3imTGqwRcW6_ia4TFN_Zyd9D5vjitT';
+                downloadLink.target = '_blank';
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+                });
+            }
+
             // Form Submission
             const contactForm = document.querySelector('.contact-form');
             if (contactForm) {
