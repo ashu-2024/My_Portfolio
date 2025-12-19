@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
         
             // Open viewable version in new tab
-                window.open('https://drive.google.com/file/d/1MN3imTGqwRcW6_ia4TFN_Zyd9D5vjitT/view', '_blank');
+                window.open('https://drive.google.com/file/d/1xkFLyx9_-v-DqCHkeGtynPG346unzV9X/view', '_blank');
         
             // Trigger download
                 const downloadLink = document.createElement('a');
-                downloadLink.href = 'https://drive.google.com/uc?export=download&id=1MN3imTGqwRcW6_ia4TFN_Zyd9D5vjitT';
+                downloadLink.href = 'https://drive.google.com/uc?export=download&id=1xkFLyx9_-v-DqCHkeGtynPG346unzV9X';
                 downloadLink.target = '_blank';
                 document.body.appendChild(downloadLink);
                 downloadLink.click();
